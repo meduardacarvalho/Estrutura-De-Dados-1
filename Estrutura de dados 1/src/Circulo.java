@@ -13,11 +13,22 @@ public class Circulo  implements Comparable <Circulo>{
         this.coordy = y;
         this.raio = r;
     }
-    public double circuferencia () {
-       
-        return coordx;
 
+    public double calcularCircunferencia() {
+        return 2 * Math.PI * raio;
+    }
 
+    public double calcularArea() {
+        return Math.PI * Math.pow(raio, 2);
+    }
+
+    public double calcularVolumeEsfera() {
+        return (4*Math.PI*Math.pow(raio, 3)) / 3;
+    }
+
+    public void moverCirculo(double novoCoordX, double novoCoordY) {
+        this.coordx= novoCoordX;
+        this.cooryY = novoCoordY;
     }
 @Override
     public String toString() { // serializa a string}
