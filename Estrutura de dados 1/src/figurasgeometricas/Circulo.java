@@ -13,6 +13,32 @@ public class Circulo  implements Comparable <Circulo>{
         this.coordy = y;
         this.raio = r;
     }
+    // get e set 
+    public double getRaio() {
+        return raio;
+    }
+
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
+
+    public double getCoordX() {
+        return coordx;
+    }
+
+    public void setCoordX(double coordx) {
+        this.coordx = coordx;
+    }
+
+    public double getCoordY() {
+        return coordy;
+    }
+
+    public void setCoordY(double coordy) {
+        this.coordy = coordy;
+    }
+        
+
 
     public double calcularCircunferencia() {
         return 2 * Math.PI * raio;
@@ -28,7 +54,7 @@ public class Circulo  implements Comparable <Circulo>{
 
     public void moverCirculo(double novoCoordX, double novoCoordY) {
         this.coordx= novoCoordX;
-        this.cooryY = novoCoordY;
+        this.coordy = novoCoordY;
     }
 @Override
     public String toString() { // serializa a string}
@@ -44,5 +70,7 @@ dif = this.raio - outro.raio;
 retorno = (int) Math.round(dif);
 return retorno;
 }
+
+
 }
 
